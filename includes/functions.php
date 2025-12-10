@@ -21,8 +21,8 @@ function sendEmail($to, $subject, $body, $altBody = '')
         $mail->Debugoutput = 'html';
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'desktop555555874@gmail.com'; // Your Gmail username
-        $mail->Password = 'dzixcuhsonohgodu';          // Your Gmail App Password
+        $mail->Username = ''; // Your Gmail username
+        $mail->Password = '';          // Your Gmail App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -65,3 +65,4 @@ function sendStaffCredentialsEmail($toEmail, $fullName, $username, $password)
     return sendEmail($toEmail, $subject, $body, $altBody);
 }
 ?>
+
