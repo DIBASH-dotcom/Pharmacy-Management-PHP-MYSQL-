@@ -26,7 +26,7 @@ function sendEmail($to, $subject, $body, $altBody = '')
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('desktop555555@gmail.com', 'Pharmacy System');
+        $mail->setFrom('your gmail', 'Pharmacy System');
         $mail->addAddress($to);
 
         $mail->isHTML(true);
@@ -65,4 +65,5 @@ function sendStaffCredentialsEmail($toEmail, $fullName, $username, $password)
     return sendEmail($toEmail, $subject, $body, $altBody);
 }
 ?>
+
 
